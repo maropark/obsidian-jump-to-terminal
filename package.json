@@ -1,0 +1,21 @@
+{
+  "name": "open-in-terminal",
+  "version": "1.0.0",
+  "description": "Open a system terminal at the directory of the current note.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production"
+  },
+  "keywords": ["obsidian", "terminal", "plugin"],
+  "author": "maro",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "0.21.5",
+    "obsidian": "latest",
+    "tslib": "2.6.2",
+    "typescript": "5.5.3"
+  }
+}
