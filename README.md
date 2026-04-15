@@ -21,7 +21,7 @@ An [Obsidian](https://obsidian.md) plugin that opens a system terminal at the di
 ### Manual
 
 1. Download `main.js` and `manifest.json` from the [latest release](https://github.com/maropark/obsidian-open-in-terminal/releases/latest)
-2. Copy both files into `<vault>/.obsidian/plugins/open-in-terminal/`
+2. Copy both files into `<vault>/.obsidian/plugins/jump-to-terminal/`
 3. Reload Obsidian and enable the plugin in Settings → Community plugins
 
 ## Configuration
@@ -58,7 +58,7 @@ Symlink into your vault for live testing:
 
 ```bash
 ln -sf ~/Projects/open-in-terminal \
-       ~/path/to/vault/.obsidian/plugins/open-in-terminal
+       ~/path/to/vault/.obsidian/plugins/jump-to-terminal
 ```
 
 Then enable the plugin in Obsidian and use Ctrl+P → "Reload app without saving" after changes.
