@@ -1,6 +1,6 @@
-# Open in Terminal
+# Jump to Terminal
 
-An [Obsidian](https://obsidian.md) plugin that opens a system terminal at the directory of the current note.
+An [Obsidian](https://obsidian.md) plugin that opens a system terminal at the directory of the current note — via right-click or the command palette.
 
 ## Features
 
@@ -15,18 +15,18 @@ An [Obsidian](https://obsidian.md) plugin that opens a system terminal at the di
 ### From Obsidian Community Plugins (recommended)
 
 1. Open Settings → Community plugins
-2. Search for "Open in Terminal"
+2. Search for "Jump to Terminal"
 3. Click Install, then Enable
 
 ### Manual
 
-1. Download `main.js` and `manifest.json` from the [latest release](https://github.com/maropark/obsidian-open-in-terminal/releases/latest)
+1. Download `main.js` and `manifest.json` from the [latest release](https://github.com/maropark/obsidian-jump-to-terminal/releases/latest)
 2. Copy both files into `<vault>/.obsidian/plugins/jump-to-terminal/`
 3. Reload Obsidian and enable the plugin in Settings → Community plugins
 
 ## Configuration
 
-Open Settings → Open in Terminal to choose your preferred terminal per platform.
+Open Settings → Jump to Terminal to choose your preferred terminal per platform.
 
 | Platform | Supported terminals |
 |----------|---------------------|
@@ -43,8 +43,8 @@ myterm --workdir={dir}
 ## Development
 
 ```bash
-git clone https://github.com/maropark/obsidian-open-in-terminal
-cd obsidian-open-in-terminal
+git clone https://github.com/maropark/obsidian-jump-to-terminal
+cd obsidian-jump-to-terminal
 npm install
 
 # Watch mode (rebuilds on save)
@@ -57,7 +57,7 @@ npm run build
 Symlink into your vault for live testing:
 
 ```bash
-ln -sf ~/Projects/open-in-terminal \
+ln -sf ~/Projects/obsidian-jump-to-terminal \
        ~/path/to/vault/.obsidian/plugins/jump-to-terminal
 ```
 

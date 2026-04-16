@@ -1,5 +1,5 @@
 {
-  "name": "open-in-terminal",
+  "name": "obsidian-jump-to-terminal",
   "version": "1.0.0",
   "description": "Open a system terminal at the directory of the current note.",
   "main": "main.js",

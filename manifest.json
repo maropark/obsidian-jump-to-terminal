@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "minAppVersion": "1.4.0",
   "description": "Open a system terminal at the directory of the current note.",
-  "author": "maro",
+  "author": "Maro Park",
   "authorUrl": "https://github.com/maropark",
   "isDesktopOnly": true
 }
