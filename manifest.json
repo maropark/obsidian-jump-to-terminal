@@ -1,7 +1,7 @@
 {
   "id": "jump-to-terminal",
   "name": "Jump to Terminal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.4.0",
   "description": "Open a system terminal at the directory of the current note.",
   "author": "Maro Park",

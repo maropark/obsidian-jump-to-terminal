@@ -206,7 +206,6 @@ class OpenInTerminalSettingTab extends PluginSettingTab {
 	display(): void {
 		const { containerEl } = this;
 		containerEl.empty();
-		containerEl.createEl("h2", { text: "Open in Terminal" });
 
 		this.renderPlatformSection(
 			containerEl,
@@ -243,7 +242,7 @@ class OpenInTerminalSettingTab extends PluginSettingTab {
 		selectionKey: keyof OpenInTerminalSettings,
 		customKey: keyof OpenInTerminalSettings
 	) {
-		container.createEl("h3", { text: label });
+		new Setting(container).setName(label).setHeading();
 
 		new Setting(container)
 			.setName("Terminal app")
