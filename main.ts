@@ -81,7 +81,7 @@ export default class OpenInTerminalPlugin extends Plugin {
 			callback: () => {
 				const file = this.app.workspace.getActiveFile();
 				if (!file) {
-					new Notice("Open in terminal: No active file.");
+					new Notice("No active file");
 					return;
 				}
 				this.openTerminalAtFile(file);
@@ -124,12 +124,12 @@ export default class OpenInTerminalPlugin extends Plugin {
 	openTerminalAtFile(file: TAbstractFile) {
 		const dir = this.resolveDirectory(file);
 		if (!dir) {
-			new Notice("Open in terminal: Could not resolve file path. Is this a local vault?");
+			new Notice("Could not resolve file path");
 			return;
 		}
 		const command = this.buildCommand(dir);
 		if (!command) {
-			new Notice("Open in terminal: No terminal configured. Check plugin settings.");
+			new Notice("No terminal configured");
 			return;
 		}
 		this.launch(command);
