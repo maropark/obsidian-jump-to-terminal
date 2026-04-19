@@ -81,7 +81,7 @@ export default class OpenInTerminalPlugin extends Plugin {
 			callback: () => {
 				const file = this.app.workspace.getActiveFile();
 				if (!file) {
-					new Notice("Open in Terminal: No active file.");
+					new Notice("Open in terminal: No active file.");
 					return;
 				}
 				this.openTerminalAtFile(file);
@@ -124,12 +124,12 @@ export default class OpenInTerminalPlugin extends Plugin {
 	openTerminalAtFile(file: TAbstractFile) {
 		const dir = this.resolveDirectory(file);
 		if (!dir) {
-			new Notice("Open in Terminal: Could not resolve file path. Is this a local vault?");
+			new Notice("Open in terminal: Could not resolve file path. Is this a local vault?");
 			return;
 		}
 		const command = this.buildCommand(dir);
 		if (!command) {
-			new Notice("Open in Terminal: No terminal configured. Check plugin settings.");
+			new Notice("Open in terminal: No terminal configured. Check plugin settings.");
 			return;
 		}
 		this.launch(command);
@@ -253,7 +253,7 @@ class OpenInTerminalSettingTab extends PluginSettingTab {
 				});
 				drop.setValue(this.plugin.settings[selectionKey]);
 				drop.onChange(async (val) => {
-					(this.plugin.settings[selectionKey] as string) = val;
+					this.plugin.settings[selectionKey] = val;
 					await this.plugin.saveSettings();
 					this.display();
 				});
@@ -268,7 +268,7 @@ class OpenInTerminalSettingTab extends PluginSettingTab {
 						.setPlaceholder("myterm --workdir={dir}")
 						.setValue(this.plugin.settings[customKey])
 						.onChange(async (val) => {
-							(this.plugin.settings[customKey] as string) = val;
+							this.plugin.settings[customKey] = val;
 							await this.plugin.saveSettings();
 						})
 				);
